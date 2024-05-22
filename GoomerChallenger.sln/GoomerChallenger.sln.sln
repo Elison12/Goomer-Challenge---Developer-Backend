@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.Domain", "..\src\GoomerChallenger.Domain\GoomerChallenger.Domain.csproj", "{99DCAA00-03AD-434C-BE46-4BD9DA4D472E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.Services", "..\src\GoomerChallenger.Services\GoomerChallenger.Services.csproj", "{599EB001-F770-458F-8829-B1F255BCF949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.Application", "..\src\GoomerChallenger.Application\GoomerChallenger.Application.csproj", "{C0D12E2A-E775-47EC-A877-FBCEF85EB3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.API", "..\src\GoomerChallenger.API\GoomerChallenger.API.csproj", "{17C29ABC-A9EA-46DF-B47C-B007755DB458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.Infra", "..\src\GoomerChallenger.Infra\GoomerChallenger.Infra.csproj", "{8D5A1226-1AFA-4080-B89E-B30C51D79CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoomerChallenger.Notification", "..\src\GoomerChallenger.Notification\GoomerChallenger.Notification.csproj", "{2E3ACA4E-99F9-48B3-A772-10DF4C4A9DA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99DCAA00-03AD-434C-BE46-4BD9DA4D472E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DCAA00-03AD-434C-BE46-4BD9DA4D472E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DCAA00-03AD-434C-BE46-4BD9DA4D472E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DCAA00-03AD-434C-BE46-4BD9DA4D472E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599EB001-F770-458F-8829-B1F255BCF949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599EB001-F770-458F-8829-B1F255BCF949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599EB001-F770-458F-8829-B1F255BCF949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599EB001-F770-458F-8829-B1F255BCF949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D12E2A-E775-47EC-A877-FBCEF85EB3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D12E2A-E775-47EC-A877-FBCEF85EB3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D12E2A-E775-47EC-A877-FBCEF85EB3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D12E2A-E775-47EC-A877-FBCEF85EB3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C29ABC-A9EA-46DF-B47C-B007755DB458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C29ABC-A9EA-46DF-B47C-B007755DB458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C29ABC-A9EA-46DF-B47C-B007755DB458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C29ABC-A9EA-46DF-B47C-B007755DB458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5A1226-1AFA-4080-B89E-B30C51D79CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5A1226-1AFA-4080-B89E-B30C51D79CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5A1226-1AFA-4080-B89E-B30C51D79CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5A1226-1AFA-4080-B89E-B30C51D79CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3ACA4E-99F9-48B3-A772-10DF4C4A9DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3ACA4E-99F9-48B3-A772-10DF4C4A9DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3ACA4E-99F9-48B3-A772-10DF4C4A9DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3ACA4E-99F9-48B3-A772-10DF4C4A9DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
