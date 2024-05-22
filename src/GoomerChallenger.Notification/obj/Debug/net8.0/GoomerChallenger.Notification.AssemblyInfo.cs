@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoomerChallenger.Notification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccb0a0567a939e155a5135cf16e41f8b227ace15")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoomerChallenger.Notification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoomerChallenger.Notification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
