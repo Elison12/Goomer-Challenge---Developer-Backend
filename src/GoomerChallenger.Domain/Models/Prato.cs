@@ -5,17 +5,29 @@ namespace GoomerChallenger.Domain.Models
 {
     public sealed class Prato : Entity, IValidate
     {
-        public Prato(string? nome, int codigo, float valor)
-        {
-            Nome = nome;
-            Codigo = codigo;
-            this.valor = valor;
-        }
-
+        public int IdPrato { get; set; }
         public string? Nome { get; private set; }
         public float valor { get; private set; }
         public int Codigo { get; private set; }
-        
+        public int RestauranteId { get; set; }
+        public Restaurante Restaurante { get; set; }
+        public Prato(int idPrato, string? nome, float valor, int codigo, int restauranteId, Restaurante restaurante)
+        {
+            IdPrato = idPrato;
+            Nome = nome;
+            this.valor = valor;
+            Codigo = codigo;
+            RestauranteId = restauranteId;
+            Restaurante = restaurante;
+        }
+
+
+        //public Prato(string? nome, int codigo, float valor)
+        //{
+        //    Nome = nome;
+        //    Codigo = codigo;
+        //    this.valor = valor;
+        //}
         public void Validate()
         {
             throw new NotImplementedException();
