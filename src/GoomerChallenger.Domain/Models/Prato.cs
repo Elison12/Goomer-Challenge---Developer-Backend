@@ -1,6 +1,7 @@
 ﻿using GoomerChallenger.Domain.Interfaces.Abstractions;
 using GoomerChallenger.Notification.Entities;
-
+using GoomerChallenger.Notification.Extensions;
+using Errors = System.Collections.Generic.List<System.Collections.Generic.Dictionary<string, string>>;
 namespace GoomerChallenger.Domain.Models
 {
     public sealed class Prato : Entity, IValidate
@@ -11,6 +12,9 @@ namespace GoomerChallenger.Domain.Models
         public int Codigo { get; private set; }
         public int RestauranteId { get; set; }
         public Restaurante Restaurante { get; set; }
+        public Cardapio Cardapio { get; set; }
+        public int idCardapio { get; set; }
+
         public Prato(int idPrato, string? nome, float valor, int codigo, int restauranteId, Restaurante restaurante)
         {
             IdPrato = idPrato;
@@ -30,7 +34,12 @@ namespace GoomerChallenger.Domain.Models
         //}
         public void Validate()
         {
-            throw new NotImplementedException();
+            var erros = new Errors();
+            erros.AddRange(this.CheckIfPropertiesIsNull());
+            if (erros.Count > 0)
+            {
+                AddNotification(erros);
+            }
         }
     }
 }

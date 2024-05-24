@@ -35,9 +35,9 @@ namespace GoomerChallenger.Infra.Mapping
                    .HasColumnName("NumFuncionarios");
             builder.Property(x => x.Gerente)
                    .HasColumnName("Gerente");
-            builder.HasMany(r => r.Cardapio)
+            builder.HasOne(c => c.cardapio)
                    .WithOne(p => p.Restaurante)
-                   .HasForeignKey(p => p.IdPrato)
+                   .HasForeignKey<Cardapio>(p => p.idRestaurante)
                    .OnDelete(DeleteBehavior.Cascade);
         }
     }
