@@ -8,10 +8,16 @@ namespace GoomerChallenger.Domain.Models
     {
 
         public int idCardapio { get; set; }
-        public Restaurante Restaurante { get; set; }
-        public int idRestaurante { get ; set; }
-        public ICollection<Prato> Pratos { get; set; }
+        public Restaurante? Restaurante { get; set; }
+        public int idRestaurante { get; set; }
+        public ICollection<Prato>? Pratos { get; set; }
 
+        public Cardapio() { }
+        public Cardapio(int idCardapio, int idRestaurante)
+        {
+            this.idCardapio = idCardapio;
+            this.idRestaurante = idRestaurante;
+        }
         //public void addPratoOnCardapio(Prato prato)
         //{
         //    if (!prato.Isvalid)

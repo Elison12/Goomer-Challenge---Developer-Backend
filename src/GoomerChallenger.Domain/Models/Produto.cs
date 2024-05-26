@@ -1,4 +1,5 @@
 ﻿
+using System.Runtime.CompilerServices;
 using GoomerChallenger.Domain.Interfaces.Abstractions;
 using GoomerChallenger.Notification.Entities;
 using GoomerChallenger.Notification.Extensions;
@@ -17,10 +18,14 @@ namespace GoomerChallenger.Domain.Models
         public DateTime DtAquisicao { get; private set; }
         public string Departamento { get; private set; }
         public int Lote { get; private set; }
+        public  bool IsPromocao { get; set; }
+        public string DescricaoPromocao { get; set; }
+        public float PrecoPromocional { get; set; }
+        public string CaminhoFoto { get; set; } 
 
         public Produto() { }
 
-        public Produto(int id, string? nome, string codigo, float valor, string categoria, DateTime dtValidade, DateTime dtAquisicao, string departamento, int lote)
+        public Produto(int id, string? nome, string codigo, float valor, string categoria, DateTime dtValidade, DateTime dtAquisicao, string departamento, int lote, string caminhoFoto)
         {
             IdProduto = id;
             Nome = nome;
@@ -31,6 +36,7 @@ namespace GoomerChallenger.Domain.Models
             DtAquisicao = dtAquisicao;
             Departamento = departamento;
             Lote = lote;
+            CaminhoFoto = caminhoFoto;
         }
 
         public void SetValor(float valor)

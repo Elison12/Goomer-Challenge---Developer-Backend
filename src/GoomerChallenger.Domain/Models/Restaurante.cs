@@ -14,10 +14,11 @@ namespace GoomerChallenger.Domain.Models
         public int NumFuncionarios { get; set; }
         public string Gerente { get; set; }
         public Cardapio cardapio { get; set; }
+        public String CaminhoFoto { get; set; }
         //public ICollection<Prato> Cardapio { get; set; } //retirar
         public Restaurante() { }
 
-        public Restaurante(int id, string nome, string endereco, string telefone, int numFuncionarios, string gerente, List<Prato> cardapio)
+        public Restaurante(int id, string nome, string endereco, string telefone, int numFuncionarios, string gerente, List<Prato> cardapio, string caminhoFoto)
         {
             idRestaurante = id;
             Nome = nome;
@@ -25,6 +26,7 @@ namespace GoomerChallenger.Domain.Models
             Telefone = telefone;
             NumFuncionarios = numFuncionarios;
             Gerente = gerente;
+            CaminhoFoto = caminhoFoto;
             //Cardapio = cardapio;
         }
         public void SetCardapio (Cardapio _cardapio)

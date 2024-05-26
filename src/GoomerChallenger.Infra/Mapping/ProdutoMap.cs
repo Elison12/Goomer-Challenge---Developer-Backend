@@ -46,6 +46,13 @@ namespace GoomerChallenger.Infra.Mapping
             builder.Property(x => x.Lote)
                    .HasColumnName("Lote")
                    .IsRequired();
+            builder.Property(x => x.IsPromocao)
+                   .HasColumnName("IsPromocao");
+            builder.Property(x => x.DescricaoPromocao)
+                   .HasColumnName("DescricaoPromocao")
+                   .HasColumnType("Varcahr(40)");
+            builder.Property(x => x.PrecoPromocional)
+                   .HasColumnName("PrecoPromocional");
         }
     }
 }

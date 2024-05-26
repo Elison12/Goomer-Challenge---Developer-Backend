@@ -14,8 +14,11 @@ namespace GoomerChallenger.Domain.Models
         public Restaurante Restaurante { get; set; }
         public Cardapio Cardapio { get; set; }
         public int idCardapio { get; set; }
+        public string CaminhoFoto { get; set; }
+        
+        public Prato() { }
 
-        public Prato(int idPrato, string? nome, float valor, int codigo, int restauranteId, Restaurante restaurante)
+        public Prato(int idPrato, string? nome, float valor, int codigo, int restauranteId, Restaurante restaurante, string caminhoFoto)
         {
             IdPrato = idPrato;
             Nome = nome;
@@ -23,6 +26,7 @@ namespace GoomerChallenger.Domain.Models
             Codigo = codigo;
             RestauranteId = restauranteId;
             Restaurante = restaurante;
+            CaminhoFoto = caminhoFoto;
         }
 
 
