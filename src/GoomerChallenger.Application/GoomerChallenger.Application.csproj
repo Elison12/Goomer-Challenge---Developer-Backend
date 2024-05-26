@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="UserCases\Restaurante\Handler\" />
+    <Folder Include="UserCases\Restaurante\Response\" />
+    <Folder Include="UserCases\Restaurante\Request\" />
+  </ItemGroup>
+
 </Project>

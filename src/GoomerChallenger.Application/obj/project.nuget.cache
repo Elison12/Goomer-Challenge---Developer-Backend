@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "02k6t+Pcc+XE270z0JcPyGSeRO0AC3Z5mU4duMrh/UOhYlw8RQEy7T07m68J94/RqBOUcanlHxdewpMTSgLNmg==",
+  "dgSpecHash": "9D3YXUWbavpng2q2kaAO1IDVQsCA0zmUwGJIVlO/7v+Q4SeN4hW9fldTg91Rj6YRkgypXulr+WGIveldSD+c/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.Application\\GoomerChallenger.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\epass\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\epass\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\epass\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\epass\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
