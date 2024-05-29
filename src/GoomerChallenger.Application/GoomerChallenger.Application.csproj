@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Interfaces\Prato\" />
+    <Folder Include="Interfaces\Produto\" />
+    <Folder Include="Interfaces\Restaurante\" />
     <Folder Include="UserCases\Produto\Handler\" />
     <Folder Include="UserCases\Produto\Response\" />
     <Folder Include="UserCases\Restaurante\Handler\" />

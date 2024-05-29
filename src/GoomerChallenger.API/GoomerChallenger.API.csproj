@@ -8,7 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoomerChallenger.Infra\GoomerChallenger.Infra.csproj" />
+    <ProjectReference Include="..\GoomerChallenger.Notification\GoomerChallenger.Notification.csproj" />
+    <ProjectReference Include="..\GoomerChallenger.Services\GoomerChallenger.Services.csproj" />
   </ItemGroup>
 
 </Project>

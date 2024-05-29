@@ -8,7 +8,6 @@ namespace GoomerChallenger.Domain.Models
     {
         public int idRestaurante { get; private set; }
         public string Nome { get; private set; }
-
         public string Endereco { get; set; }
         public string Telefone { get; set; }
         public int NumFuncionarios { get; set; }
