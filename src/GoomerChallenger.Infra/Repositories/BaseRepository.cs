@@ -36,9 +36,15 @@ namespace GoomerChallenger.Infra.Repositories
                                        .ToListAsync();
         }
 
-        public Task GetAsync(int id)
+        public virtual async Task<T> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            var obj = await _GoomerContext.Set<T>()
+                        .AsNoTracking()
+                        .Where(x => x.Id.Equals(id))
+                        .ToListAsync();
+                        
+
+            return obj.FirstOrDefault();
         }
 
         public virtual async Task<T> Update(T obj)

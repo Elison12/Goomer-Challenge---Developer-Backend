@@ -7,9 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="UserCases\Produto\Handler\" />
+    <Folder Include="UserCases\Produto\Response\" />
     <Folder Include="UserCases\Restaurante\Handler\" />
     <Folder Include="UserCases\Restaurante\Response\" />
-    <Folder Include="UserCases\Restaurante\Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoomerChallenger.Domain\GoomerChallenger.Domain.csproj" />
   </ItemGroup>
 
 </Project>

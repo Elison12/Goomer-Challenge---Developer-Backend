@@ -11,7 +11,7 @@ namespace GoomerChallenger.Infra.Interfaces
         Task<T> CreateAsync(T obj);
         Task DeleteAsync(T obj);
         Task<T> Update(T obj);
-        Task GetAsync(int id);
+        Task<T> GetAsync(int id);
         Task<IEnumerable<T>> GetAllAsync();
     }
 }
