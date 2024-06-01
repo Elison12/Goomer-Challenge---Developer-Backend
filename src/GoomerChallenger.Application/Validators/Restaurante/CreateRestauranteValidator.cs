@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using GoomerChallenger.Application.UserCases.Restaurante.Request;
+using GoomerChallenger.Application.UserCases.Restaurantes.Request;
 
 namespace GoomerChallenger.Application.Validators.Restaurante
 {
@@ -30,9 +30,9 @@ namespace GoomerChallenger.Application.Validators.Restaurante
             RuleFor(x => x.Foto)
                 .NotEmpty()
                 .WithMessage("É necessário que o restaurante tenha uma foto para cadastro")
-                
+
                 .NotEmpty()
-                .WithMessage("A foto do restaurante não pode nula")
+                .WithMessage("A foto do restaurante não pode nula");
 
                 
         }

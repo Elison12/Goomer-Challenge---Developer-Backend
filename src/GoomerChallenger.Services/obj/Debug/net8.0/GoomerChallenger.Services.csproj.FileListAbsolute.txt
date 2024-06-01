@@ -1,0 +1,12 @@
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\bin\Debug\net8.0\GoomerChallenger.Services.deps.json
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\bin\Debug\net8.0\GoomerChallenger.Services.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\bin\Debug\net8.0\GoomerChallenger.Services.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.AssemblyInfoInputs.cache
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.AssemblyInfo.cs
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.csproj.CoreCompileInputs.cache
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.sourcelink.json
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\refint\GoomerChallenger.Services.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\GoomerChallenger.Services.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Services\obj\Debug\net8.0\ref\GoomerChallenger.Services.dll

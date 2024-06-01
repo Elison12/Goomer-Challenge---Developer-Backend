@@ -6,6 +6,6 @@ namespace GoomerChallenger.Domain.Interfaces.Abstractions
     {
         HttpStatusCode Statuscode { get; set; }
         string Message { get; set; }
-        Dictionary<string, string> Erros { get; set; }
+        Dictionary<string, string> Errors { get; set; }
     }
 }

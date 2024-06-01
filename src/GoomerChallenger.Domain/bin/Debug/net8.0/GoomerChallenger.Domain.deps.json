@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GoomerChallenger.Domain/1.0.0": {
+        "dependencies": {
+          "GoomerChallenger.Notification": "1.0.0"
+        },
+        "runtime": {
+          "GoomerChallenger.Domain.dll": {}
+        }
+      },
+      "GoomerChallenger.Notification/1.0.0": {
+        "runtime": {
+          "GoomerChallenger.Notification.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GoomerChallenger.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoomerChallenger.Notification/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

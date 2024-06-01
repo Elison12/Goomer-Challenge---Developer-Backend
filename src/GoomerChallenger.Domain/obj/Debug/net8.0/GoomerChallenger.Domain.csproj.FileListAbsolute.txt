@@ -1,0 +1,16 @@
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\bin\Debug\net8.0\GoomerChallenger.Domain.deps.json
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\bin\Debug\net8.0\GoomerChallenger.Domain.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\bin\Debug\net8.0\GoomerChallenger.Domain.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\bin\Debug\net8.0\GoomerChallenger.Notification.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\bin\Debug\net8.0\GoomerChallenger.Notification.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.csproj.AssemblyReference.cache
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.AssemblyInfoInputs.cache
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.AssemblyInfo.cs
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.csproj.CoreCompileInputs.cache
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.sourcelink.json
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerCh.1FB2EE3F.Up2Date
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\refint\GoomerChallenger.Domain.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\GoomerChallenger.Domain.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.Domain\obj\Debug\net8.0\ref\GoomerChallenger.Domain.dll

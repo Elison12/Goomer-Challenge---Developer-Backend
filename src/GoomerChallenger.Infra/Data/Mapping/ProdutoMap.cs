@@ -12,7 +12,7 @@ namespace GoomerChallenger.Infra.Data.Mapping
 
             builder.Ignore(x => x.Id);
             builder.Ignore(x => x.Errors);
-            builder.Ignore(x => x.IsValid);
+            builder.Ignore(x => x.Isvalid);
 
         }
     }

@@ -7,11 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Prato\" />
-    <Folder Include="Interfaces\Produto\" />
+    <Folder Include="Abstractions\Prato\" />
+    <Folder Include="Abstractions\Produto\" />
     <Folder Include="UserCases\Produto\Handler\" />
     <Folder Include="UserCases\Produto\Response\" />
-    <Folder Include="UserCases\Restaurante\Response\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +20,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GoomerChallenger.Domain\GoomerChallenger.Domain.csproj" />
+    <ProjectReference Include="..\GoomerChallenger.Infra\GoomerChallenger.Infra.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 </Project>

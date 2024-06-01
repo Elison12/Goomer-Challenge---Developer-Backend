@@ -2,7 +2,7 @@
 using GoomerChallenger.Application.Validators.Restaurante;
 using GoomerChallenger.Domain.Interfaces.Abstractions;
 using Microsoft.AspNetCore.Http;
-namespace GoomerChallenger.Application.UserCases.Restaurante.Request
+namespace GoomerChallenger.Application.UserCases.Restaurantes.Request
 {
     public class CreateRestauranteRequest : IRequest
     {
@@ -14,9 +14,9 @@ namespace GoomerChallenger.Application.UserCases.Restaurante.Request
 
         public CreateRestauranteRequest(IFormFile foto, string nome, string endereco)
         {
-            Foto = foto;
             Nome = nome;
             Endereco = endereco;
+            Foto = foto;
         }
 
         public ValidationResult Validar()

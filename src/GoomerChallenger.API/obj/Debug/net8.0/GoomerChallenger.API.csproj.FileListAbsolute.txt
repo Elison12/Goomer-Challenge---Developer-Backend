@@ -15,7 +15,6 @@ C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerC
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.AssemblyInfoInputs.cache
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.AssemblyInfo.cs
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.csproj.CoreCompileInputs.cache
-C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\staticwebassets.development.json
@@ -32,3 +31,16 @@ C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerC
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.genruntimeconfig.cache
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\ref\GoomerChallenger.API.dll
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.sourcelink.json
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\Npgsql.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Domain.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Infra.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Notification.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Services.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Infra.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Notification.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Services.pdb
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.Domain.pdb

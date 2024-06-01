@@ -1,6 +1,7 @@
 ﻿using GoomerChallenger.Domain.Models;
 using GoomerChallenger.Infra.Data.Context;
 using GoomerChallenger.Infra.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GoomerChallenger.Infra.Repositories
 {
@@ -11,6 +12,17 @@ namespace GoomerChallenger.Infra.Repositories
         public RestauranteRepository(IBaseRepository<Restaurante> baseRepository, GoomerContext context) : base(context)
         {
             _goomerContext = context;
+        }
+
+        public async Task<Restaurante> SearchByName(string name)
+        {
+            var result = await _goomerContext.Restaurante
+                                .FirstOrDefaultAsync(x => x.Nome == name);
+            if (result is null)
+            {
+                return null;
+            }
+            return result;
         }
     }
 }
