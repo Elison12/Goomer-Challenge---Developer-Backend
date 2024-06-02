@@ -50,7 +50,7 @@ namespace GoomerChallenger.Infra.Mapping
                    .HasColumnName("IsPromocao");
             builder.Property(x => x.DescricaoPromocao)
                    .HasColumnName("DescricaoPromocao")
-                   .HasColumnType("Varcahr(40)");
+                   .HasColumnType("Varchar(40)");
             builder.Property(x => x.PrecoPromocional)
                    .HasColumnName("PrecoPromocional");
         }

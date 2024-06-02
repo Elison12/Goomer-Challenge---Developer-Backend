@@ -1,5 +1,6 @@
 ﻿
 using FluentValidation.Results;
+using GoomerChallenger.Application.Validators.Produto;
 using GoomerChallenger.Domain.Interfaces.Abstractions;
 using Microsoft.AspNetCore.Http;
 
