@@ -17,14 +17,14 @@ namespace GoomerChallenger.Domain.Models
         //public ICollection<Prato> Cardapio { get; set; } //retirar
         public Restaurante() { }
 
-        public Restaurante(string nome, string endereco, string caminhoFoto)
+        public Restaurante(string nome, string endereco, string caminhoFoto, string telefone, string gerente)
         {
             //idRestaurante = id;
             Nome = nome;
             Endereco = endereco;
-            //Telefone = telefone;
+            Telefone = telefone;
             //NumFuncionarios = numFuncionarios;
-            //Gerente = gerente;
+            Gerente = gerente;
             CaminhoFoto = caminhoFoto;
             //Cardapio = cardapio;
         }

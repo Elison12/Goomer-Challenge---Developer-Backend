@@ -10,5 +10,6 @@ namespace GoomerChallenger.Infra.Interfaces
     public interface IRestauranteRepository : IBaseRepository<Restaurante>
     {
         Task <Restaurante> SearchByName(String  name);
+        Task AddAsync(Restaurante restaurante);
     }
 }

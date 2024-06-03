@@ -10,13 +10,15 @@ namespace GoomerChallenger.Application.UserCases.Restaurantes.Request
         public IFormFile Foto { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
-
-
-        public CreateRestauranteRequest(IFormFile foto, string nome, string endereco)
+        public  string Telefone { get; set; }
+        public string Gerente { get; set; }
+        public CreateRestauranteRequest(IFormFile foto, string nome, string endereco, string telefone, string gerente)
         {
             Nome = nome;
             Endereco = endereco;
             Foto = foto;
+            Telefone = telefone;
+            Gerente = gerente;
         }
 
         public ValidationResult Validar()

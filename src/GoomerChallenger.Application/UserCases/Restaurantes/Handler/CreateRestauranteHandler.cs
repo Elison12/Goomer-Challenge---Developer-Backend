@@ -10,6 +10,7 @@ using GoomerChallenger.Domain.Models;
 using GoomerChallenger.Infra.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GoomerChallenger.Application
     .UserCases.Restaurantes.Handler
@@ -26,7 +27,7 @@ namespace GoomerChallenger.Application
             _env = env;
         }
 
-        public async Task<IResponse> Handle(CreateRestauranteRequest request)
+        public async Task<IResponse> Handle([FromQuery]CreateRestauranteRequest request)
         {
             #region validações
 
@@ -38,44 +39,60 @@ namespace GoomerChallenger.Application
                        message: "Requisição invalida. Verifique os dados informados",
                        errors: result.Errors.ToDictionary(error => error.PropertyName, error => error.ErrorMessage)
                     );
-
+            string pathimage = null;
             #endregion
             try
             {
                 #region Verificações
                 var restauranteSearch = await _IRestauranteRepository.SearchByName(request.Nome);
-                if (restauranteSearch is null)
+                if (restauranteSearch is not null)
                 {
                     return new AlreadyExists(statuscode: HttpStatusCode.Conflict, message: "Já existe um restaurante com esse nome.");
                 }
 
-                var pathimage = await SaveImagem(request.Foto);
+                pathimage = await SaveImagem(request.Foto);
                 if (pathimage is null)
                 {
                     return new UnsupportedFile(statuscode: HttpStatusCode.Conflict, message: "Não foi possivel salvar um resturante com essa imagem.");
                 }
                 #endregion
 
-                return await AddRestaurante(request.Nome, request.Endereco, pathimage);
+                return await AddRestaurante(request.Nome, request.Endereco, pathimage, request.Telefone, request.Gerente);
             }
             catch (Exception)
             {
                 _IUnitOfWork.RollBack();
+
+                // Deleta a imagem caso ocorra um erro
+                if (pathimage != null)
+                {
+                    DeleteImagem(pathimage);
+                }
+
                 throw;
             }
-            finally
+            //finally
+            //{
+            //    _IUnitOfWork.Dispose();
+            //}
+        }
+
+        private void DeleteImagem(string path)
+        {
+            if (File.Exists(path))
             {
-                _IUnitOfWork.Dispose();
+                File.Delete(path);
             }
         }
 
-
-        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem)
+        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem, string telefone, string gerente)
         {
             var newRestaurante = new Restaurante(
                 nome: nome,
                 endereco: endereco,
-                caminhoFoto: caminhoImagem
+                caminhoFoto: caminhoImagem,
+                telefone: telefone,
+                gerente: gerente
             );
 
             if (!newRestaurante.Isvalid)
@@ -83,7 +100,7 @@ namespace GoomerChallenger.Application
                                                    Errors: newRestaurante.Errors);
             _IUnitOfWork.BeginTransaction();
 
-            await _IRestauranteRepository.CreateAsync(newRestaurante);
+            await _IRestauranteRepository.AddAsync(newRestaurante);
 
 
             return new CreatedSuccessfully(statuscode: HttpStatusCode.Created,

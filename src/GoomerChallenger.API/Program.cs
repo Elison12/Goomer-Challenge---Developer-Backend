@@ -1,3 +1,4 @@
+using GoomerChallenger.API.Controller;
 using GoomerChallenger.API.Extension;
 using GoomerChallenger.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -10,16 +11,22 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddContext(builder.Configuration);
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddContext(builder.Configuration);
+builder.AddDependencies();
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<GoomerContext>(options =>
-    options.UseNpgsql(connectionString));
+//builder.Services.AddDbContext<GoomerContext>(options =>
+//    options.UseNpgsql(connectionString));
 
 
 var app = builder.Build();
+var mapGroup = app.MapGroup("v1");
+
+mapGroup.AddRestauranteRoutes();
+//mapGroup.AddLoginRoutes();
+//mapGroup.AddLocalityRoutes();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

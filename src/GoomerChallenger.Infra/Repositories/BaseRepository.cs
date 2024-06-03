@@ -8,11 +8,13 @@ namespace GoomerChallenger.Infra.Repositories
     public class BaseRepository<T> : IBaseRepository<T> where T : Entity, new()
     {
         private readonly GoomerContext _GoomerContext;
-
+        protected readonly DbSet<T> _dbSet;
 
         public BaseRepository(GoomerContext context)
         {
             _GoomerContext = context;
+            _dbSet = _GoomerContext.Set<T>();
+
         }
 
         public virtual async Task<T> CreateAsync(T obj)
@@ -22,6 +24,9 @@ namespace GoomerChallenger.Infra.Repositories
 
             return obj;
         }
+
+        public async Task AddAsync(T obj)
+            => await _dbSet.AddAsync(obj);
 
         public virtual async Task DeleteAsync(T obj)
         {

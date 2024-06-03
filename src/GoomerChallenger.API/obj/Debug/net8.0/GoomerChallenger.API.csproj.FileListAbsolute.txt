@@ -115,3 +115,4 @@ C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerC
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.pdb
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\GoomerChallenger.API.genruntimeconfig.cache
 C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\obj\Debug\net8.0\ref\GoomerChallenger.API.dll
+C:\Users\epass\OneDrive\Documentos\arquivos\desafios\goomerChallenge\src\GoomerChallenger.API\bin\Debug\net8.0\GoomerChallenger.API.staticwebassets.runtime.json

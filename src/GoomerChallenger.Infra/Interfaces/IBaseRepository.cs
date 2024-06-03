@@ -13,5 +13,6 @@ namespace GoomerChallenger.Infra.Interfaces
         Task<T> Update(T obj);
         Task<T> GetAsync(int id);
         Task<IEnumerable<T>> GetAllAsync();
+        Task AddAsync(T obj);
     }
 }

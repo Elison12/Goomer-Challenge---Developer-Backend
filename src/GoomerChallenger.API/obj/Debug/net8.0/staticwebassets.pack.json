@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\0372d43b-a8e4-4d7d-bcf6-69a3c8af9715.png",
+      "PackagePath": "staticwebassets\\imagens\\0372d43b-a8e4-4d7d-bcf6-69a3c8af9715.png"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\21eec3d8-2deb-48e2-8895-07f1fe2c500a.jpeg",
+      "PackagePath": "staticwebassets\\imagens\\21eec3d8-2deb-48e2-8895-07f1fe2c500a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\522992ad-150c-45a6-ba55-10f887bfd101.png",
+      "PackagePath": "staticwebassets\\imagens\\522992ad-150c-45a6-ba55-10f887bfd101.png"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\6b4c562d-47a5-4bf8-87c6-b0615b050289.png",
+      "PackagePath": "staticwebassets\\imagens\\6b4c562d-47a5-4bf8-87c6-b0615b050289.png"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\b365e9d9-40d7-40ef-b0cc-8c02609a0cf1.png",
+      "PackagePath": "staticwebassets\\imagens\\b365e9d9-40d7-40ef-b0cc-8c02609a0cf1.png"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\c74fdd2e-84d4-4987-90ec-d4b3349653b6.jpeg",
+      "PackagePath": "staticwebassets\\imagens\\c74fdd2e-84d4-4987-90ec-d4b3349653b6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\eb1bf230-bf27-4f2c-aa46-e80732b67909.jpeg",
+      "PackagePath": "staticwebassets\\imagens\\eb1bf230-bf27-4f2c-aa46-e80732b67909.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\ed62c1cb-6d5c-4ecd-9f5d-d00ce5ec1eef.png",
+      "PackagePath": "staticwebassets\\imagens\\ed62c1cb-6d5c-4ecd-9f5d-d00ce5ec1eef.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GoomerChallenger.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GoomerChallenger.API.props",
+      "PackagePath": "build\\GoomerChallenger.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GoomerChallenger.API.props",
+      "PackagePath": "buildMultiTargeting\\GoomerChallenger.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GoomerChallenger.API.props",
+      "PackagePath": "buildTransitive\\GoomerChallenger.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

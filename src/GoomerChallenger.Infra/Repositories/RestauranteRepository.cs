@@ -11,6 +11,7 @@ namespace GoomerChallenger.Infra.Repositories
         private readonly IBaseRepository<Restaurante> _baseRepository;
         public RestauranteRepository(IBaseRepository<Restaurante> baseRepository, GoomerContext context) : base(context)
         {
+            _baseRepository = baseRepository;
             _goomerContext = context;
         }
 
@@ -24,5 +25,7 @@ namespace GoomerChallenger.Infra.Repositories
             }
             return result;
         }
+        public Task AddAsync(Restaurante restaurante)
+    => _baseRepository.AddAsync(restaurante);
     }
 }
