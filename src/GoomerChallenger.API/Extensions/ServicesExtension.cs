@@ -1,9 +1,14 @@
 using GoomerChallenger.Application.Abstractions.Restaurantes;
 using GoomerChallenger.Application.UserCases.Restaurantes.Handler;
+using GoomerChallenger.Domain.Interfaces.BaseRepository;
+using GoomerChallenger.Domain.Interfaces.Queries;
+using GoomerChallenger.Domain.Interfaces.RestauranteRepository;
+using GoomerChallenger.Domain.Interfaces.Services;
 using GoomerChallenger.Domain.Interfaces.UnitOfWork;
+using GoomerChallenger.Domain.Queries;
 using GoomerChallenger.Infra.Data.Context;
-using GoomerChallenger.Infra.Interfaces;
 using GoomerChallenger.Infra.Repositories;
+using GoomerChallenger.Infra.Services;
 using GoomerChallenger.Notification.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +32,8 @@ namespace GoomerChallenger.API.Extension
         {
             AddRepository(builder);
             AddRestauranteHandler(builder);
+            AddServices(builder);
+            AddQueries(builder);
         }
 
         private static void AddRepository(WebApplicationBuilder builder)
@@ -38,6 +45,18 @@ namespace GoomerChallenger.API.Extension
         private static void AddRestauranteHandler(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<ICreateRestaurante, CreateRestauranteHandler>();
+        }
+
+        private static void AddServices(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<IRestauranteQueriesServices, RestauranteQueriesServices>();
+
+        }
+
+        private static void AddQueries(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<IRestauranteQueries, RestauranteQueries>();
+
         }
 
 

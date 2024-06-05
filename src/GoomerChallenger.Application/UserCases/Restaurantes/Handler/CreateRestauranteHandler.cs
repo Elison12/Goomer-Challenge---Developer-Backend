@@ -5,9 +5,9 @@ using GoomerChallenger.Application.Abstractions.Restaurantes;
 using GoomerChallenger.Application.UserCases.Restaurantes.Request;
 using GoomerChallenger.Application.UserCases.Restaurantes.Response;
 using GoomerChallenger.Domain.Interfaces.Abstractions;
+using GoomerChallenger.Domain.Interfaces.RestauranteRepository;
 using GoomerChallenger.Domain.Interfaces.UnitOfWork;
 using GoomerChallenger.Domain.Models;
-using GoomerChallenger.Infra.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,13 +17,13 @@ namespace GoomerChallenger.Application
 {
     public class CreateRestauranteHandler : ICreateRestaurante
     {
-        private readonly IUnitOfWork _IUnitOfWork;
-        private readonly IRestauranteRepository _IRestauranteRepository;
+        private readonly IUnitOfWork _UnitOfWork;
+        private readonly IRestauranteRepository _RestauranteRepository;
         private readonly IWebHostEnvironment _env;
         public CreateRestauranteHandler(IRestauranteRepository restauranteRepository, IUnitOfWork iUnitOfWork, IWebHostEnvironment env)
         {
-            _IUnitOfWork = iUnitOfWork;
-            _IRestauranteRepository = restauranteRepository;
+            _UnitOfWork = iUnitOfWork;
+            _RestauranteRepository = restauranteRepository;
             _env = env;
         }
 
@@ -44,7 +44,7 @@ namespace GoomerChallenger.Application
             try
             {
                 #region Verificações
-                var restauranteSearch = await _IRestauranteRepository.SearchByName(request.Nome);
+                var restauranteSearch = await _RestauranteRepository.SearchByName(request.Nome);
                 if (restauranteSearch is not null)
                 {
                     return new AlreadyExists(statuscode: HttpStatusCode.Conflict, message: "Já existe um restaurante com esse nome.");
@@ -57,11 +57,11 @@ namespace GoomerChallenger.Application
                 }
                 #endregion
 
-                return await AddRestaurante(request.Nome, request.Endereco, pathimage, request.Telefone, request.Gerente);
+                return await AddRestaurante(request.Nome, request.Endereco, pathimage, request.Telefone, request.Gerente, request.NumFuncionarios);
             }
             catch (Exception)
             {
-                _IUnitOfWork.RollBack();
+                _UnitOfWork.RollBack();
 
                 // Deleta a imagem caso ocorra um erro
                 if (pathimage != null)
@@ -71,10 +71,10 @@ namespace GoomerChallenger.Application
 
                 throw;
             }
-            //finally
-            //{
-            //    _IUnitOfWork.Dispose();
-            //}
+            finally
+            {
+                _UnitOfWork.Dispose();
+            }
         }
 
         private void DeleteImagem(string path)
@@ -85,22 +85,23 @@ namespace GoomerChallenger.Application
             }
         }
 
-        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem, string telefone, string gerente)
+        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem, string telefone, string gerente, int numFuncionarios)
         {
             var newRestaurante = new Restaurante(
                 nome: nome,
                 endereco: endereco,
                 caminhoFoto: caminhoImagem,
                 telefone: telefone,
-                gerente: gerente
+                gerente: gerente,
+                numFuncionarios: numFuncionarios
             );
 
             if (!newRestaurante.Isvalid)
                 return new DomainNotification(StatusCode: HttpStatusCode.BadRequest,
                                                    Errors: newRestaurante.Errors);
-            _IUnitOfWork.BeginTransaction();
+            _UnitOfWork.BeginTransaction();
 
-            await _IRestauranteRepository.AddAsync(newRestaurante);
+            await _RestauranteRepository.AddAsync(newRestaurante);
 
 
             return new CreatedSuccessfully(statuscode: HttpStatusCode.Created,

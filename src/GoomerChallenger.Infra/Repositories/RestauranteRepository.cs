@@ -1,15 +1,16 @@
-﻿using GoomerChallenger.Domain.Models;
+﻿using GoomerChallenger.Domain.Interfaces.BaseRepository;
+using GoomerChallenger.Domain.Interfaces.RestauranteRepository;
+using GoomerChallenger.Domain.Models;
 using GoomerChallenger.Infra.Data.Context;
-using GoomerChallenger.Infra.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoomerChallenger.Infra.Repositories
 {
-    public sealed class RestauranteRepository : BaseRepository<Restaurante>, IRestauranteRepository
+    public sealed class RestauranteRepository : IRestauranteRepository
     {
         private readonly GoomerContext _goomerContext;
         private readonly IBaseRepository<Restaurante> _baseRepository;
-        public RestauranteRepository(IBaseRepository<Restaurante> baseRepository, GoomerContext context) : base(context)
+        public RestauranteRepository(IBaseRepository<Restaurante> baseRepository, GoomerContext context)
         {
             _baseRepository = baseRepository;
             _goomerContext = context;
@@ -26,6 +27,8 @@ namespace GoomerChallenger.Infra.Repositories
             return result;
         }
         public Task AddAsync(Restaurante restaurante)
-    => _baseRepository.AddAsync(restaurante);
+            => _baseRepository.AddAsync(restaurante);
+
+
     }
 }

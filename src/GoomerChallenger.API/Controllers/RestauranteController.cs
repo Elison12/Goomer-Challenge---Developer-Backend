@@ -1,6 +1,8 @@
 using GoomerChallenger.Application.Abstractions.Restaurantes;
 using GoomerChallenger.Application.UserCases.Restaurantes.Request;
 using GoomerChallenger.Application.UserCases.Restaurantes.Response;
+using GoomerChallenger.Domain.DTO;
+using GoomerChallenger.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoomerChallenger.API.Controller
@@ -25,85 +27,31 @@ namespace GoomerChallenger.API.Controller
                 if (response.Statuscode == System.Net.HttpStatusCode.BadRequest)
                     return Results.BadRequest(response);
 
-                return Results.Created("users/activate-user", response);
+                return Results.Created("", response);
             })
                 .Produces(StatusCodes.Status200OK, typeof(CreatedSuccessfully))
                 .Produces(StatusCodes.Status400BadRequest, typeof(InvalidRequest))
                 .WithOpenApi(operation => new(operation)
                 {
-                    Summary = "Realizar login",
-                    Description = "Permite realizar login na aplicação, retorna um token de acesso que deve ser configurado para ser utilizado nos endpoints que o solicitem.",
+                    Summary = "Realiza cadastro de um restaurante",
+                    Description = "",
                 })
                 .DisableAntiforgery();
+
+
+            restauranteRoute.MapGet("/", async ([FromServices] IRestauranteQueriesServices services) =>
+            {
+                var users = await services.GetAllAsync();
+
+                return Results.Ok(users);
+
+            }).Produces(StatusCodes.Status200OK, typeof(IEnumerable<RestauranteDTO>))
+              .WithOpenApi(operation => new(operation)
+              {
+                  Summary = "Retorna todos os restaurantes",
+                  Description = "Endpoint para retornar todos os restaurantes cadastrados.",
+                });
         }
-
-
-        //[HttpPost]
-        //public async Task<IResult> Create(CreateRestauranteRequest request, [FromServices] ICreateRestaurante handler)
-        //{
-        //    try
-        //    {
-        //        var response = await handler.Handle(request);
-        //        if (response.Statuscode == System.Net.HttpStatusCode.BadRequest) {
-        //            return Results.BadRequest(response);
-        //        }
-        //        return Results.Ok(response);
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-
-        //    }
-        //}
-
-        //[HttpGet]
-        //public Task<ActionResult> Get(int id)
-        //{
-        //    try
-        //    {
-        //        throw new NotImplementedException();
-        //    }
-        //    catch ( Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
-
-        //public Task<ActionResult> GetAll()
-        //{
-        //    try
-        //    {
-        //        throw new NotImplementedException();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
-
-        //public Task<ActionResult> Delete(int id)
-        //{
-        //    try
-        //    {
-        //        throw new NotImplementedException();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
-
-        //public Task<ActionResult> Update(int id)
-        //{
-        //    try
-        //    {
-        //        throw new NotImplementedException();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
     }
 
 

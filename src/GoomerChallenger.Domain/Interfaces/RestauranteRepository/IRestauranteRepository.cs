@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using GoomerChallenger.Domain.Models;
 
-namespace GoomerChallenger.Infra.Interfaces
+namespace GoomerChallenger.Domain.Interfaces.RestauranteRepository
 {
-    public interface IRestauranteRepository : IBaseRepository<Restaurante>
+    public interface IRestauranteRepository
     {
-        Task <Restaurante> SearchByName(String  name);
         Task AddAsync(Restaurante restaurante);
+        Task<Restaurante> SearchByName (string name);
     }
 }

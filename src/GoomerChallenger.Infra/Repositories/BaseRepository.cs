@@ -1,5 +1,5 @@
-﻿using GoomerChallenger.Infra.Data.Context;
-using GoomerChallenger.Infra.Interfaces;
+﻿using GoomerChallenger.Domain.Interfaces.BaseRepository;
+using GoomerChallenger.Infra.Data.Context;
 using GoomerChallenger.Notification.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +14,6 @@ namespace GoomerChallenger.Infra.Repositories
         {
             _GoomerContext = context;
             _dbSet = _GoomerContext.Set<T>();
-
         }
 
         public virtual async Task<T> CreateAsync(T obj)
