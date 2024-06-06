@@ -11,6 +11,6 @@ namespace GoomerChallenger.Application.Abstractions.Restaurantes;
 
 public interface ICreateRestaurante
 {
-    Task<IResponse> Handle(CreateRestauranteRequest request);
+    Task<IResponse> Handle(CreateRestauranteRequest request, CancellationToken cancellationToken);
     Task<String> SaveImagem(IFormFile imagemRecebida);
 }

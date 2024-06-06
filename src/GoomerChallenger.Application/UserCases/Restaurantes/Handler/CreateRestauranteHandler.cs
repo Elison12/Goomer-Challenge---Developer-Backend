@@ -10,7 +10,6 @@ using GoomerChallenger.Domain.Interfaces.UnitOfWork;
 using GoomerChallenger.Domain.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace GoomerChallenger.Application
     .UserCases.Restaurantes.Handler
@@ -27,7 +26,7 @@ namespace GoomerChallenger.Application
             _env = env;
         }
 
-        public async Task<IResponse> Handle([FromQuery]CreateRestauranteRequest request)
+        public async Task<IResponse> Handle(CreateRestauranteRequest request, CancellationToken cancellationToken)
         {
             #region validações
 
@@ -57,7 +56,7 @@ namespace GoomerChallenger.Application
                 }
                 #endregion
 
-                return await AddRestaurante(request.Nome, request.Endereco, pathimage, request.Telefone, request.Gerente, request.NumFuncionarios);
+                return await AddRestaurante(request.Nome, request.Endereco, pathimage, request.Telefone, request.Gerente, request.NumFuncionarios, cancellationToken);
             }
             catch (Exception)
             {
@@ -85,7 +84,7 @@ namespace GoomerChallenger.Application
             }
         }
 
-        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem, string telefone, string gerente, int numFuncionarios)
+        private async Task<IResponse> AddRestaurante(string nome, string endereco, string caminhoImagem, string telefone, string gerente, int numFuncionarios, CancellationToken cancellationToken)
         {
             var newRestaurante = new Restaurante(
                 nome: nome,
@@ -96,13 +95,14 @@ namespace GoomerChallenger.Application
                 numFuncionarios: numFuncionarios
             );
 
+
             if (!newRestaurante.Isvalid)
                 return new DomainNotification(StatusCode: HttpStatusCode.BadRequest,
                                                    Errors: newRestaurante.Errors);
             _UnitOfWork.BeginTransaction();
 
             await _RestauranteRepository.AddAsync(newRestaurante);
-
+            await _UnitOfWork.Commit(cancellationToken);
 
             return new CreatedSuccessfully(statuscode: HttpStatusCode.Created,
                                           message: "Um novo restaurante foi criado !"

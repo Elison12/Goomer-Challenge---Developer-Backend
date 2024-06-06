@@ -1,5 +1,6 @@
 ﻿using GoomerChallenger.Domain.Interfaces.UnitOfWork;
 using GoomerChallenger.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace GoomerChallenger.Infra.Repositories
@@ -28,6 +29,12 @@ namespace GoomerChallenger.Infra.Repositories
         public void RollBack()
         {
             _transaction?.Rollback();
+        }
+
+        public async Task Commit(CancellationToken cancellationToken)
+        {
+            await _GoomerContext.SaveChangesAsync(cancellationToken);
+            _transaction?.Commit();
         }
     }
 }

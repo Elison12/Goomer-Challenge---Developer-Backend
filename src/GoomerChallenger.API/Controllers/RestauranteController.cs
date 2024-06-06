@@ -11,18 +11,16 @@ namespace GoomerChallenger.API.Controller
     public static class RestauranteController
     {
 
-
-        //public RestauranteController() { }
-
         public static void AddRestauranteRoutes(this RouteGroupBuilder route)
         {
             var restauranteRoute = route.MapGroup("restaurante");
 
             restauranteRoute.MapPost("/Restaurante", async ([FromForm] CreateRestauranteRequest request,
-                                        [FromServices] ICreateRestaurante handler
+                                        [FromServices] ICreateRestaurante handler,
+                                        CancellationToken cancellationToken
                                  ) =>
             {
-                var response = await handler.Handle(request);
+                var response = await handler.Handle(request, cancellationToken);
 
                 if (response.Statuscode == System.Net.HttpStatusCode.BadRequest)
                     return Results.BadRequest(response);
@@ -50,7 +48,7 @@ namespace GoomerChallenger.API.Controller
               {
                   Summary = "Retorna todos os restaurantes",
                   Description = "Endpoint para retornar todos os restaurantes cadastrados.",
-                });
+              });
         }
     }
 

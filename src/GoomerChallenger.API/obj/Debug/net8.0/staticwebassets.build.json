@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z24s9cjZP36YhVRgGB1cGTwxpUG6T2fWZkSlmIComgM=",
+  "Hash": "jVnTytOwfEynrAfZ/5D33uZC0geDv2DyiWEP3EArVBE=",
   "Source": "GoomerChallenger.API",
   "BasePath": "_content/GoomerChallenger.API",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\0c2f89f2-8754-45e1-9674-72e1edfbb6e3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\1137e18f-0cce-4b81-9b8b-bff56fa21921.jpeg",
+      "SourceId": "GoomerChallenger.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\",
+      "BasePath": "_content/GoomerChallenger.API",
+      "RelativePath": "imagens/1137e18f-0cce-4b81-9b8b-bff56fa21921.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\1137e18f-0cce-4b81-9b8b-bff56fa21921.jpeg"
     },
     {
       "Identity": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\160bad6a-5beb-4331-ac97-3885465acb49.png",
