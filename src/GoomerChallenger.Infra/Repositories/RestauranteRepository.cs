@@ -29,6 +29,22 @@ namespace GoomerChallenger.Infra.Repositories
         public Task AddAsync(Restaurante restaurante)
             => _baseRepository.AddAsync(restaurante);
 
+        public async Task<Restaurante> GetByIdAsync(int id)
+        {
+            var result = await _goomerContext.Restaurante
+                                               .FirstOrDefaultAsync(x => x.idRestaurante == id);
+            if (result is null)
+                return null;
+            return result;
+        }
+        public async Task<bool> RemoveAsync(Restaurante request)
+        {
+            var deleted = await _goomerContext
+                    .Restaurante
+                    .Where(x => x.idRestaurante == request.idRestaurante)
+                    .ExecuteDeleteAsync();
 
+            return deleted != 0;
+        }
     }
 }

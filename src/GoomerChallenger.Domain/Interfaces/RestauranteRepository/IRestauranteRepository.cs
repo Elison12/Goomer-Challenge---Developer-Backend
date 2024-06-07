@@ -6,5 +6,7 @@ namespace GoomerChallenger.Domain.Interfaces.RestauranteRepository
     {
         Task AddAsync(Restaurante restaurante);
         Task<Restaurante> SearchByName(string name);
+        Task<Restaurante> GetByIdAsync(int id);
+        Task<Boolean> RemoveAsync(Restaurante request);
     }
 }

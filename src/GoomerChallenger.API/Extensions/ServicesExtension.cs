@@ -31,7 +31,7 @@ namespace GoomerChallenger.API.Extension
         public static void AddDependencies(this WebApplicationBuilder builder)
         {
             AddRepository(builder);
-            AddRestauranteHandler(builder);
+            RestauranteHandler(builder);
             AddServices(builder);
             AddQueries(builder);
         }
@@ -42,9 +42,10 @@ namespace GoomerChallenger.API.Extension
             builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
             builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
         }
-        private static void AddRestauranteHandler(WebApplicationBuilder builder)
+        private static void RestauranteHandler(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<ICreateRestaurante, CreateRestauranteHandler>();
+            builder.Services.AddScoped<DeleteRestauranteInterface, DeleteRestauranteHandler>();
         }
 
         private static void AddServices(WebApplicationBuilder builder)
