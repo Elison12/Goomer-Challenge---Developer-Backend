@@ -1,4 +1,5 @@
 ﻿using GoomerChallenger.Domain.Interfaces.BaseRepository;
+using GoomerChallenger.Domain.Models;
 using GoomerChallenger.Infra.Data.Context;
 using GoomerChallenger.Notification.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -57,6 +58,14 @@ namespace GoomerChallenger.Infra.Repositories
             await _GoomerContext.SaveChangesAsync();
 
             return obj;
+        }
+
+        public async Task<Boolean> UpdateAsync(T obj)
+        {
+            var updated = _GoomerContext.Entry(obj).State = EntityState.Modified;
+            await _GoomerContext.SaveChangesAsync();
+
+            return updated != 0;
         }
     }
 }

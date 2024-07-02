@@ -10,5 +10,6 @@ namespace GoomerChallenger.Domain.Interfaces.BaseRepository
     public interface IBaseRepository<T>
     {
         Task AddAsync(T obj);
+        Task<Boolean> UpdateAsync( T obj);
     }
 }

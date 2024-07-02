@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T10zyaM53FQZ7GzsyuICCm+LSHJLC21pipaIjm8btGNNKBV0he15+I8hVFkzwxwSKYoHVOfMDBVqyIlzllyj8w==",
+  "dgSpecHash": "oz3gT9CT4FYb834UQdEiN7VteZQfRPoWI9iN1V1uVpJypzVWGWu9D3I6U4B4oLjW5THUXYbu2GU14cjgO6BTMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\GoomerChallenger.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\epass\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

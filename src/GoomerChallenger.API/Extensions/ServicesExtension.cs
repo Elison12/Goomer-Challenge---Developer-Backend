@@ -11,7 +11,6 @@ using GoomerChallenger.Infra.Repositories;
 using GoomerChallenger.Infra.Services;
 using GoomerChallenger.Notification.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace GoomerChallenger.API.Extension
 {
@@ -46,6 +45,7 @@ namespace GoomerChallenger.API.Extension
         {
             builder.Services.AddScoped<ICreateRestaurante, CreateRestauranteHandler>();
             builder.Services.AddScoped<DeleteRestauranteInterface, DeleteRestauranteHandler>();
+            builder.Services.AddScoped<UpdateRestauranteInterface, UpdateRestauranteHandler>();
         }
 
         private static void AddServices(WebApplicationBuilder builder)

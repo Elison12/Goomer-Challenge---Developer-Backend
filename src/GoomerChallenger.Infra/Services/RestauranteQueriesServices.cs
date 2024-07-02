@@ -20,7 +20,7 @@ namespace GoomerChallenger.Infra.Services
             _goomerContext = goomerContext;
         }
          public async Task<Result<IEnumerable<RestauranteDTO>>> GetAllAsync()
-        {
+          {
             try
             {
                 var restaurantes = await _goomerContext
@@ -28,7 +28,8 @@ namespace GoomerChallenger.Infra.Services
                         .AsNoTracking()
                         .Select(x => new RestauranteDTO
                         {
-                            Nome = x.Nome,
+                           ID = x.idRestaurante,
+                           Nome = x.Nome,
                            Endereco = x.Endereco,
                            Telefone = x.Telefone,
                            NumFuncionarios = x.NumFuncionarios,

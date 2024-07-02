@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9VB7jDA986OOMIuiRwJCUXPIGPV3biJXRUBlqf9d4qhABeyPGhRAirU9PNpr3ebcS94s+IyRraN587GGZ/Thtg==",
+  "dgSpecHash": "Lagm8iCet+0YXwUYxUweNBEaJRbrCaNlmjD++maXrQ+4yhf3SMfz2YRkG/g7MhsQ1owKrOubG+wqbCV/tpc+DQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.Application\\GoomerChallenger.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\epass\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\epass\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

@@ -1,6 +1,5 @@
 using System.Net;
 using GoomerChallenger.Application.Abstractions.Restaurantes;
-using GoomerChallenger.Application.UserCases.Restaurantes.Handler;
 using GoomerChallenger.Application.UserCases.Restaurantes.Request;
 using GoomerChallenger.Application.UserCases.Restaurantes.Response;
 using GoomerChallenger.Domain.DTO;
@@ -24,7 +23,7 @@ namespace GoomerChallenger.API.Controller
             {
                 var response = await handler.Handle(request, cancellationToken);
 
-                if (response.Statuscode == System.Net.HttpStatusCode.BadRequest)
+                if (response.Statuscode == HttpStatusCode.BadRequest)
                     return Results.BadRequest(response);
 
                 return Results.Created("", response);
@@ -41,9 +40,9 @@ namespace GoomerChallenger.API.Controller
 
             restauranteRoute.MapGet("/Restaurante", async ([FromServices] IRestauranteQueriesServices services) =>
             {
-                var users = await services.GetAllAsync();
+                var response = await services.GetAllAsync();
 
-                return Results.Ok(users);
+                return Results.Ok(response);
 
             }).Produces(StatusCodes.Status200OK, typeof(IEnumerable<RestauranteDTO>))
               .WithOpenApi(operation => new(operation)
@@ -67,14 +66,40 @@ namespace GoomerChallenger.API.Controller
                     return Results.StatusCode(500);
 
                 return Results.Ok(response);
-            }).Produces(StatusCodes.Status200OK, typeof(DeletedSuccessfully))
-            .Produces(StatusCodes.Status400BadRequest, typeof(InvalidRequest))
-            .Produces(StatusCodes.Status500InternalServerError, typeof(DeleteRestauranteError))
-              .WithOpenApi(operation => new(operation)
+            })
+                .Produces(StatusCodes.Status200OK, typeof(DeletedSuccessfully))
+                .Produces(StatusCodes.Status400BadRequest, typeof(InvalidRequest))
+                .Produces(StatusCodes.Status500InternalServerError, typeof(DeleteRestauranteError))
+                .WithOpenApi(operation => new(operation)
               {
                   Summary = "Excluir",
-                  Description = "Endpoint para retornar todos os restaurantes cadastrados.",
+                  Description = "Endpoint para exclusão de um restaurante com base no seu ID",
               });
+
+            restauranteRoute.MapPut("/Restaurante", async ([FromForm] UpdateRestauranteRequest request,
+                                                     [FromServices] UpdateRestauranteInterface handler,
+                                                     CancellationToken cancellationToken
+             ) =>
+            {
+                var response = await handler.Handle(request, cancellationToken);
+                if (response.Statuscode == HttpStatusCode.BadRequest)
+                {
+                    return Results.BadRequest(response);
+                }
+
+                if (response.Statuscode == HttpStatusCode.InternalServerError)
+                {
+                    return Results.StatusCode(500);
+                }
+
+                return Results.Ok(response);
+            }
+            ).WithOpenApi(operation => new(operation)
+            {
+                Summary = "Atualização dos dados de um restaurante.",
+                Description = "Endpoint para atualizar o nome do usuário.",
+            })
+            .DisableAntiforgery();
         }
     }
 

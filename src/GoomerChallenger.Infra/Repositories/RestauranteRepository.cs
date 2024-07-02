@@ -46,5 +46,13 @@ namespace GoomerChallenger.Infra.Repositories
 
             return deleted != 0;
         }
+
+        public async Task<bool> UpdateRestauranteAsync(Restaurante restaurante)
+        {
+            var updated = _goomerContext.Entry(restaurante).State = EntityState.Modified;
+            await _goomerContext.SaveChangesAsync();
+
+            return updated != 0;
+        }
     }
 }

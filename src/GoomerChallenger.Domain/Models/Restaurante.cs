@@ -7,7 +7,7 @@ namespace GoomerChallenger.Domain.Models
     public sealed class Restaurante : Entity, IValidate
     {
         public int idRestaurante { get; private set; }
-        public string Nome { get; private set; }
+        public string Nome { get;  set; }
         public string Endereco { get; set; }
         public string Telefone { get; set; }
         public int NumFuncionarios { get; set; }
