@@ -1,6 +1,9 @@
+using GoomerChallenger.Application.Abstractions.Produtos;
 using GoomerChallenger.Application.Abstractions.Restaurantes;
+using GoomerChallenger.Application.UserCases.Produtos.Handler;
 using GoomerChallenger.Application.UserCases.Restaurantes.Handler;
 using GoomerChallenger.Domain.Interfaces.BaseRepository;
+using GoomerChallenger.Domain.Interfaces.ProdutoRepository;
 using GoomerChallenger.Domain.Interfaces.Queries;
 using GoomerChallenger.Domain.Interfaces.RestauranteRepository;
 using GoomerChallenger.Domain.Interfaces.Services;
@@ -31,14 +34,21 @@ namespace GoomerChallenger.API.Extension
         {
             AddRepository(builder);
             RestauranteHandler(builder);
+            ProdutoHandler(builder);
             AddServices(builder);
             AddQueries(builder);
+        }
+
+        private static void ProdutoHandler(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<CreateProdutoInterface, CreateProdutoHandler>();
         }
 
         private static void AddRepository(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped(serviceType: typeof(IBaseRepository<>), implementationType: typeof(BaseRepository<>));
             builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
+            builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
             builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
         }
         private static void RestauranteHandler(WebApplicationBuilder builder)

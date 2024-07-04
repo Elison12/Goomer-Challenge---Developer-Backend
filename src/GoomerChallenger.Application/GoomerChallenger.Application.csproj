@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Abstractions\Prato\" />
-    <Folder Include="Abstractions\Produto\" />
-    <Folder Include="UserCases\Produto\Handler\" />
-    <Folder Include="UserCases\Produto\Response\" />
   </ItemGroup>
 
   <ItemGroup>

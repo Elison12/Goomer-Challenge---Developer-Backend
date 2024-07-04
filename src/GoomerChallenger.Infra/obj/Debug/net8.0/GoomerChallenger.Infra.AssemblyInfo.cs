@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoomerChallenger.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+475082a76b4764e7c453becb5e216311cd52cb4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42265b7f664f8bb0ad7a841371a8cfb999c1e6e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoomerChallenger.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoomerChallenger.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

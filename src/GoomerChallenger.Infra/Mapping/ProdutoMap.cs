@@ -37,11 +37,11 @@ namespace GoomerChallenger.Infra.Mapping
                    .IsRequired();
             builder.Property(x => x.DtAquisicao)
                    .HasColumnName("DtAquisicao")
-                   .HasColumnType("Date")
+                   .HasColumnType("VarChar(8)")
                    .IsRequired();
             builder.Property(x => x.DtValidade)
                    .HasColumnName("DtValidade")
-                   .HasColumnType("Date")
+                   .HasColumnType("VarChar(8)")
                    .IsRequired();
             builder.Property(x => x.Lote)
                    .HasColumnName("Lote")

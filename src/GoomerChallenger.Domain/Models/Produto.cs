@@ -14,8 +14,8 @@ namespace GoomerChallenger.Domain.Models
         public String Codigo { get; private set; }
         public float Valor { get; private set; }
         public String Categoria { get; private set; }
-        public DateTime DtValidade { get; private set; }
-        public DateTime DtAquisicao { get; private set; }
+        public string DtValidade { get; private set; }
+        public string DtAquisicao { get; private set; }
         public string Departamento { get; private set; }
         public int Lote { get; private set; }
         public  bool IsPromocao { get; set; }
@@ -25,9 +25,9 @@ namespace GoomerChallenger.Domain.Models
 
         public Produto() { }
 
-        public Produto(int id, string? nome, string codigo, float valor, string categoria, DateTime dtValidade, DateTime dtAquisicao, string departamento, int lote, string caminhoFoto)
+        public Produto(string? nome, string codigo, float valor, string categoria, string dtValidade, string dtAquisicao, string departamento, int lote, string caminhoFoto)
         {
-            IdProduto = id;
+            //IdProduto = id;
             Nome = nome;
             Codigo = codigo;
             Valor = valor;

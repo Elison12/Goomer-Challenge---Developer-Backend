@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using GoomerChallenger.Application.UserCases.Produto.Request;
+using GoomerChallenger.Application.UserCases.Produtos.Request;
 
 namespace GoomerChallenger.Application.Validators.Produto
 {
@@ -22,7 +22,7 @@ namespace GoomerChallenger.Application.Validators.Produto
                 .NotEmpty()
                 .WithMessage("O produto precisa de uma categoria");
 
-            RuleFor(x => x.Foto)
+            RuleFor(x => x.CaminhoFoto)
                 .NotEmpty()
                 .WithMessage("É necessario adicionar uma foto para o produto");
         }

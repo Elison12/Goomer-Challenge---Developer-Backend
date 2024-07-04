@@ -1,4 +1,5 @@
-using GoomerChallenger.API.Controller;
+using GoomerChallenger.API.Controllers.Produto;
+using GoomerChallenger.API.Controllers.Restaurante;
 using GoomerChallenger.API.Extension;
 using GoomerChallenger.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -24,8 +25,7 @@ var app = builder.Build();
 var mapGroup = app.MapGroup("v1");
 
 mapGroup.AddRestauranteRoutes();
-//mapGroup.AddLoginRoutes();
-//mapGroup.AddLocalityRoutes();
+mapGroup.AddProdutoRoutes();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
