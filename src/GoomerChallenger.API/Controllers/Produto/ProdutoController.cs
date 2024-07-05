@@ -2,6 +2,8 @@ using System.Net;
 using GoomerChallenger.Application.Abstractions.Produtos;
 using GoomerChallenger.Application.UserCases.Produtos.Request;
 using GoomerChallenger.Application.UserCases.Restaurantes.Response;
+using GoomerChallenger.Domain.DTO;
+using GoomerChallenger.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoomerChallenger.API.Controllers.Produto
@@ -34,6 +36,20 @@ namespace GoomerChallenger.API.Controllers.Produto
                     Description = "Endpoint para cadastrar novo produto.",
                 })
                 .DisableAntiforgery();
+
+            produtoRoute.MapGet("/Produto", async ([FromServices] IProdutoQueriesServices services
+                            ) =>
+            {
+                var response = await services.GetAllAsync();
+
+                return Results.Ok(response);
+            }
+            ).Produces(StatusCodes.Status200OK, typeof(IEnumerable<RestauranteDTO>))
+              .WithOpenApi(operation => new(operation)
+              {
+                  Summary = "Listar",
+                  Description = "Endpoint para retornar todos os produtos cadastrados.",
+              }); ;
         }
     }
 }

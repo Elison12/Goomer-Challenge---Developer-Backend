@@ -1,132 +1,40 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\0372d43b-a8e4-4d7d-bcf6-69a3c8af9715.png",
-      "PackagePath": "staticwebassets\\imagens\\0372d43b-a8e4-4d7d-bcf6-69a3c8af9715.png"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\258b5849-9e7c-4f46-a2ab-18a12aba7f83.jpg",
+      "PackagePath": "staticwebassets\\imagens\\258b5849-9e7c-4f46-a2ab-18a12aba7f83.jpg"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\0c2f89f2-8754-45e1-9674-72e1edfbb6e3.jpg",
-      "PackagePath": "staticwebassets\\imagens\\0c2f89f2-8754-45e1-9674-72e1edfbb6e3.jpg"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\27dda14b-09c6-48c0-adb8-92991fc9ae7c.md",
+      "PackagePath": "staticwebassets\\imagens\\27dda14b-09c6-48c0-adb8-92991fc9ae7c.md"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\1137e18f-0cce-4b81-9b8b-bff56fa21921.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\1137e18f-0cce-4b81-9b8b-bff56fa21921.jpeg"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\3173c8c5-965b-4ceb-86e6-55444c8c9acc.md",
+      "PackagePath": "staticwebassets\\imagens\\3173c8c5-965b-4ceb-86e6-55444c8c9acc.md"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\160bad6a-5beb-4331-ac97-3885465acb49.png",
-      "PackagePath": "staticwebassets\\imagens\\160bad6a-5beb-4331-ac97-3885465acb49.png"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\371fe9be-3ba7-4c37-b81f-a80a18b1fff2.md",
+      "PackagePath": "staticwebassets\\imagens\\371fe9be-3ba7-4c37-b81f-a80a18b1fff2.md"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\21eec3d8-2deb-48e2-8895-07f1fe2c500a.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\21eec3d8-2deb-48e2-8895-07f1fe2c500a.jpeg"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\6533ffe2-9857-461b-93fc-57997970ef4e.jpg",
+      "PackagePath": "staticwebassets\\imagens\\6533ffe2-9857-461b-93fc-57997970ef4e.jpg"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\289fd0b8-4076-4d81-ac0d-8b38102f1a52.md",
-      "PackagePath": "staticwebassets\\imagens\\289fd0b8-4076-4d81-ac0d-8b38102f1a52.md"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\a090b5d9-6ac5-44aa-bf62-d3969df0d407.jpg",
+      "PackagePath": "staticwebassets\\imagens\\a090b5d9-6ac5-44aa-bf62-d3969df0d407.jpg"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\38f04ec0-c760-460c-96e4-440b25ab1459.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\38f04ec0-c760-460c-96e4-440b25ab1459.jpeg"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\b7e0a56e-bcd1-4f55-a391-557474bf12f2.md",
+      "PackagePath": "staticwebassets\\imagens\\b7e0a56e-bcd1-4f55-a391-557474bf12f2.md"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\41e0f44a-a4c5-4536-aa5c-3f6ade5461f0.md",
-      "PackagePath": "staticwebassets\\imagens\\41e0f44a-a4c5-4536-aa5c-3f6ade5461f0.md"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\e11b9c9c-b398-486e-b35c-cfea7e5a3124.png",
+      "PackagePath": "staticwebassets\\imagens\\e11b9c9c-b398-486e-b35c-cfea7e5a3124.png"
     },
     {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\51f69240-4726-4107-b705-da6a3dc77554.png",
-      "PackagePath": "staticwebassets\\imagens\\51f69240-4726-4107-b705-da6a3dc77554.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\522992ad-150c-45a6-ba55-10f887bfd101.png",
-      "PackagePath": "staticwebassets\\imagens\\522992ad-150c-45a6-ba55-10f887bfd101.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\5751574c-bf16-47fe-8691-6b692af7632c.jpg",
-      "PackagePath": "staticwebassets\\imagens\\5751574c-bf16-47fe-8691-6b692af7632c.jpg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\6ada2da1-c042-4979-aa14-c28e65b6722e.jpg",
-      "PackagePath": "staticwebassets\\imagens\\6ada2da1-c042-4979-aa14-c28e65b6722e.jpg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\6b4c562d-47a5-4bf8-87c6-b0615b050289.png",
-      "PackagePath": "staticwebassets\\imagens\\6b4c562d-47a5-4bf8-87c6-b0615b050289.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\7168eb88-9423-4502-93eb-9f74a117b42a.jpg",
-      "PackagePath": "staticwebassets\\imagens\\7168eb88-9423-4502-93eb-9f74a117b42a.jpg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\794e9a5c-11b1-421a-80df-6a673e925be1.png",
-      "PackagePath": "staticwebassets\\imagens\\794e9a5c-11b1-421a-80df-6a673e925be1.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\814bb0ff-88b1-47de-af9d-1911b541755f.png",
-      "PackagePath": "staticwebassets\\imagens\\814bb0ff-88b1-47de-af9d-1911b541755f.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\8b9b61d6-d7a0-4e95-8c98-dc7c4c909bcf.png",
-      "PackagePath": "staticwebassets\\imagens\\8b9b61d6-d7a0-4e95-8c98-dc7c4c909bcf.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\9ba3908f-9e17-41d7-81de-76d7fa2c1d85.jpg",
-      "PackagePath": "staticwebassets\\imagens\\9ba3908f-9e17-41d7-81de-76d7fa2c1d85.jpg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\9dbb093e-0d19-4d63-9bed-07fc19ad09ec.png",
-      "PackagePath": "staticwebassets\\imagens\\9dbb093e-0d19-4d63-9bed-07fc19ad09ec.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\aa58e382-8f55-4782-a271-1ba9f6fe3b0f.jpg",
-      "PackagePath": "staticwebassets\\imagens\\aa58e382-8f55-4782-a271-1ba9f6fe3b0f.jpg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\afd10039-1f7a-4bf8-81f9-45fb0f7fee9b.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\afd10039-1f7a-4bf8-81f9-45fb0f7fee9b.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\b365e9d9-40d7-40ef-b0cc-8c02609a0cf1.png",
-      "PackagePath": "staticwebassets\\imagens\\b365e9d9-40d7-40ef-b0cc-8c02609a0cf1.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\b868eaa0-a003-4182-ba9a-0d9d3905a80e.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\b868eaa0-a003-4182-ba9a-0d9d3905a80e.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\c5467560-9cd2-4b5c-a70e-e7b921adce57.md",
-      "PackagePath": "staticwebassets\\imagens\\c5467560-9cd2-4b5c-a70e-e7b921adce57.md"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\c74fdd2e-84d4-4987-90ec-d4b3349653b6.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\c74fdd2e-84d4-4987-90ec-d4b3349653b6.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\cab3657b-0029-4220-a3f0-5c97c5cc0e42.png",
-      "PackagePath": "staticwebassets\\imagens\\cab3657b-0029-4220-a3f0-5c97c5cc0e42.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\d79141c7-48b8-4ad9-a573-1e9024afb618.md",
-      "PackagePath": "staticwebassets\\imagens\\d79141c7-48b8-4ad9-a573-1e9024afb618.md"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\eb1bf230-bf27-4f2c-aa46-e80732b67909.jpeg",
-      "PackagePath": "staticwebassets\\imagens\\eb1bf230-bf27-4f2c-aa46-e80732b67909.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\ed62c1cb-6d5c-4ecd-9f5d-d00ce5ec1eef.png",
-      "PackagePath": "staticwebassets\\imagens\\ed62c1cb-6d5c-4ecd-9f5d-d00ce5ec1eef.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\f6020abb-bd78-4a25-b993-af448e3aaa4f.png",
-      "PackagePath": "staticwebassets\\imagens\\f6020abb-bd78-4a25-b993-af448e3aaa4f.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\faa83937-6be0-40db-bea0-5432c59efe02.png",
-      "PackagePath": "staticwebassets\\imagens\\faa83937-6be0-40db-bea0-5432c59efe02.png"
-    },
-    {
-      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\faf91dc3-17d6-45d1-beca-3b2c269249fd.jpg",
-      "PackagePath": "staticwebassets\\imagens\\faf91dc3-17d6-45d1-beca-3b2c269249fd.jpg"
+      "Id": "C:\\Users\\epass\\OneDrive\\Documentos\\arquivos\\desafios\\goomerChallenge\\src\\GoomerChallenger.API\\wwwroot\\imagens\\ea9c16bd-8725-4c06-bc31-1a1d23c6cc90.jpg",
+      "PackagePath": "staticwebassets\\imagens\\ea9c16bd-8725-4c06-bc31-1a1d23c6cc90.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GoomerChallenger.API.Microsoft.AspNetCore.StaticWebAssets.props",

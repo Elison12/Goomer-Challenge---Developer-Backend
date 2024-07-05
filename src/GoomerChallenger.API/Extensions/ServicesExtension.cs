@@ -61,6 +61,7 @@ namespace GoomerChallenger.API.Extension
         private static void AddServices(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<IRestauranteQueriesServices, RestauranteQueriesServices>();
+            builder.Services.AddScoped<IProdutoQueriesServices, ProdutoQueriesServices>();
 
         }
 
