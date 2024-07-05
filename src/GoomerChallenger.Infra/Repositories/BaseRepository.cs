@@ -47,7 +47,7 @@ namespace GoomerChallenger.Infra.Repositories
                         .AsNoTracking()
                         .Where(x => x.Id.Equals(id))
                         .ToListAsync();
-                        
+
 
             return obj.FirstOrDefault();
         }

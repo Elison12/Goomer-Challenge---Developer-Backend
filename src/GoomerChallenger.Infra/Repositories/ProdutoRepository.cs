@@ -28,5 +28,16 @@ namespace GoomerChallenger.Infra.Repositories
             }
             return result;
         }
+
+        public async Task<Produto> GetByIdAsync(int id)
+        {
+            var result = await _goomerContext.Produto
+                                               .FirstOrDefaultAsync(x => x.IdProduto == id);
+            if (result is null)
+                return null;
+
+            return result;
+        }
+
     }
 }

@@ -42,6 +42,7 @@ namespace GoomerChallenger.API.Extension
         private static void ProdutoHandler(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<CreateProdutoInterface, CreateProdutoHandler>();
+            builder.Services.AddScoped<DeleteProdutoInterface, DeleteProdutoHandler>();
         }
 
         private static void AddRepository(WebApplicationBuilder builder)
@@ -49,7 +50,7 @@ namespace GoomerChallenger.API.Extension
             builder.Services.AddScoped(serviceType: typeof(IBaseRepository<>), implementationType: typeof(BaseRepository<>));
             builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
             builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
         private static void RestauranteHandler(WebApplicationBuilder builder)
         {

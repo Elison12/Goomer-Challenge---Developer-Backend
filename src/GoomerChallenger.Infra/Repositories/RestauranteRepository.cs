@@ -35,6 +35,7 @@ namespace GoomerChallenger.Infra.Repositories
                                                .FirstOrDefaultAsync(x => x.idRestaurante == id);
             if (result is null)
                 return null;
+
             return result;
         }
         public async Task<bool> RemoveAsync(Restaurante request)

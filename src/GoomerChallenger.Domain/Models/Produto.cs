@@ -19,7 +19,7 @@ namespace GoomerChallenger.Domain.Models
         public string Departamento { get; private set; }
         public int Lote { get; private set; }
         public  bool IsPromocao { get; set; }
-        public string DescricaoPromocao { get; set; }
+        public string? DescricaoPromocao { get; set; }
         public float PrecoPromocional { get; set; }
         public string CaminhoFoto { get; set; } 
 
